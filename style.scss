@@ -1,6 +1,20 @@
 ---
 ---
+@font-face {
+  font-family: 'clarendon';
+  src: url('clarendon-webfont.woff2') format('woff2'),
+       url('clarendon-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'ziclets';
+  src: url('ziclets-webfont.woff2') format('woff2'),
+       url('ziclets-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 //
 // IMPORTS
 //
@@ -19,7 +33,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $content-font;
   color: $darkGray;
 }
 
@@ -31,7 +45,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $header-font;
   color: $darkerGray;
   font-weight: bold;
 
@@ -194,7 +208,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $header-font;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -213,7 +227,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $content-font;
   font-size: 18px;
 
   @include mobile {
