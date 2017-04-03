@@ -134,6 +134,7 @@ img {
 
 .date {
   color: $secondary-text-color;
+  font-size: 2.4vh;
   a {
     color: inherit;
     &:hover {
@@ -209,9 +210,10 @@ img {
 
 .post {
   blockquote {
-    margin: 3vh 1vh;
+    margin: 3vh 3vh;
     color: $text-color;
-    font-size: 3.3vh;
+    font-size: 2.8vh;
+    line-height: 1.4em;
     font-style: italic;
   }
 
@@ -230,6 +232,7 @@ img {
 
 footer {
   color: $secondary-text-color;
+  font-size: 2.8vh;
   margin: auto;
   text-align: center;
 }
