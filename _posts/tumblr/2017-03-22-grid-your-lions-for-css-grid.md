@@ -8,7 +8,7 @@ I’m really excited about the CSS grid layout implementation that became widely
 
 [Jen Simmons](https://twitter.com/jensimmons) has been [writing](http://jensimmons.com/writing) about and working with grid extensively and I’ve been learning from her [demos](http://labs.jensimmons.com/) and [meetups](https://www.meetup.com/CSS-Layout-Club). To dive into grid, I made a [homepage](http://jingyufanclub.co/) using many of its new [properties](http://jensimmons.com/post/mar-1-2017/wow-grid-has-so-many-properties-do-we-need-them-all). Firefox has an inspector [tool](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts) to help visualize grid layout. Herewith a few examples from my [stylesheet](https://github.com/jingyufanclub/jingyufanclub.github.io/blob/master/stylesheets/index.css).
 
-Grid is not yet available in all browsers, so you ought to write a [feature query](https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/) to test whether the property is [supported](http://caniuse.com/#feat=css-grid)
+Grid is not yet available in all browsers, so you ought to write a [feature query](https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/) to test whether the property is [supported](http://caniuse.com/#feat=css-grid).
 
 ```css
 @supports (display: grid) {
