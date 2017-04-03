@@ -3,7 +3,6 @@ layout: post
 title: Grid Your Lions for CSS Grid
 date: '2017-03-22T22:45:07-04:00'
 tags: []
-tumblr_url: http://duncecapsforcats.com/post/158726132157/grid-your-lions-for-css-grid
 ---
 I’m really excited about the CSS grid layout implementation that became widely available this month. I personally love the control of hand-coded layout. Imagine positioning elements using two dimensions instead of one and now you can throw out all your frameworks (but hang on to your Sass)!
 

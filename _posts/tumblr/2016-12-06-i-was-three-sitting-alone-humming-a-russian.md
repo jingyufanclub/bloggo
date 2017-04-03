@@ -3,7 +3,6 @@ layout: post
 title: []
 date: '2016-12-06T17:48:18-05:00'
 tags: []
-tumblr_url: http://duncecapsforcats.com/post/154136632512/i-was-three-sitting-alone-humming-a-russian
 ---
 
 >"I was three, sitting alone, humming a Russian children’s song to myself. In translation:

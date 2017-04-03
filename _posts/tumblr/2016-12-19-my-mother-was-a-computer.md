@@ -3,13 +3,12 @@ layout: post
 title: "“My Mother Was a Computer”"
 date: '2016-12-19T00:01:51-05:00'
 tags: []
-tumblr_url: http://duncecapsforcats.com/post/154663647202/my-mother-was-a-computer
 ---
 In my last post I wrote that I wanted to look at the relationship between programming language and natural language, maybe something about signifiers and the signified. I didn’t have a particular thesis or really any salient thought about the topic so I started googling a bunch of words I thought might go together. One book seemed to have a fair number of mentions and so I Amazon Primed *My Mother Was a Computer: Digital Subjects and Literary Texts* by N. Katherine Hayles (University of Chicago Press, 2005). Hayles is a professor of literature at UCLA and has written a lot about the dynamics of technology, science, and art.
 
 If you Google Book API it, you will find it listed under the subject “Computers.” It’s description would be:
 
-> “We live in a world, according to N. Katherine Hayles, where new languages are constantly emerging, proliferating, and fading into obsolescence. These are languages of our own making: the programming languages written in code for the intelligent machines we call computers. Hayles&rsquo;s latest exploration provides an exciting new way of understanding the relations between code and language and considers how their interactions have affected creative, technological, and artistic practices.
+> “We live in a world, according to N. Katherine Hayles, where new languages are constantly emerging, proliferating, and fading into obsolescence. These are languages of our own making: the programming languages written in code for the intelligent machines we call computers. Hayles's latest exploration provides an exciting new way of understanding the relations between code and language and considers how their interactions have affected creative, technological, and artistic practices.
 
 *My Mother Was a Computer* explores how the impact of code on everyday life has become comparable to that of speech and writing: language and code have grown more entangled, the lines that once separated humans from machines, analog from digital, and old technologies from new ones have become blurred. *My Mother Was a Computer* gives us the tools necessary to make sense of these complex relationships.”
 

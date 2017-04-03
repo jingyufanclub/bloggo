@@ -99,7 +99,15 @@ ul, ol {
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
+}
+
+li {
+  padding-left: 2vh;
+  &:before {
+      content: "❥";
+      padding-right: 1vh;
+  }
 }
 
 ol {

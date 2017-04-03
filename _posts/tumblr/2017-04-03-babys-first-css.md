@@ -3,7 +3,6 @@ layout: post
 title: Baby’s First CSS
 date: '2017-04-03T00:43:50-04:00'
 tags: []
-tumblr_url: http://duncecapsforcats.com/post/159116242057/babys-first-css
 ---
 This is the complete stylesheet from my very first homepage published to the Internet. The original HTML 4.0 files are unreadable, likely because they were written in MS Word and exported for web as HTML. This was a thing that one was once able to do. The layout was constructed with tables, frames, and indiscriminate use of
 

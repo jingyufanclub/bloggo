@@ -3,19 +3,18 @@ layout: post
 title: Sandwiches in the Expanded Field, or, “Happiness is...sharing a sandwich.”
 date: '2017-01-07T23:32:53-05:00'
 tags: []
-tumblr_url: http://duncecapsforcats.com/post/155559529557/sandwiches-in-the-expanded-field-or-happiness
 ---
 Sando Club is about friendship. Members eat sandwiches and collect stamps together in exchange for fun and prizes. Sandwich Club is about documentation. Members record their best sandwich meals and comments in a Google Sheet. [Sando Club](http://sandoclub.tumblr.com) is ephemeral; [Sandwich Club](http://sandwich-club.org/) is a database.
 
-![sando spreadsheet](http://68.media.tumblr.com/c957ed22b280059ec56662440bd923ca/tumblr_inline_ojfv9zElQP1qag9g1_1280.png)
+![sando spreadsheet]({{ site.baseurl }}/images/sandwich-sheet.png)
 
 You can access [Sandwich Club’s Goggle Sheet](https://docs.google.com/spreadsheets/d/1TsvTu_lRNoZ3KCCKp5bc0PejxO27zjj8PzoZa-UfUe0/edit#gid=1) via a link on their website. Anyone with the link can record sandwiches and comments. I saved this sheet as a comma-separated values (CSV) file and used Ruby’s CSV class methods to parse the file and seed the database for a Rails application. I wanted to preserve both the functions of the sheet and its ethos, i.e. anyone can access the database and add valid entries by code of honor, no user sign-up or login required.
 
-![sando app](http://68.media.tumblr.com/6bf3010ebb39fe5409864152ca583fe7/tumblr_ojiyg39SiT1vmucwyo1_1280.png)
+![sando app]({{ site.baseurl }}/images/sandwich-splash.png)
 
 In the app you can view a list of all the sandwiches, see individual sandwich entries, view each member and a list of all the sandwiches she has eaten, add a new sandwich, and leave comments for each sandwich.
 
-![sando app](http://68.media.tumblr.com/1cdd27e16e7ae6ba028ab9d2aaf8e6dd/tumblr_inline_ojfwdi2cOW1qag9g1_1280.png)
+![sando app]({{ site.baseurl }}/images/sandwich-add.png)
 
 A particular challenge of adding a new sandwich is the ability to create a new eater and assign her to that sandwich. To do this I employed nested attributes.
 
@@ -71,7 +70,7 @@ form_for @sandwich do |f|
 end
 ```
 
-And for the sandwich controller&rsquo;s create action:
+And for the sandwich controller's create action:
 
 ```ruby
 @eater = Eater.find_or_create_by(name: params[:sandwich][:eater][:name])
@@ -79,7 +78,7 @@ And for the sandwich controller&rsquo;s create action:
 
 In these snippets you can see that I also have nested attributes for comments. On an individual sandwich page you can create a new comment to associate with that sandwich and at the same time create a new user for that comment.
 
-![sando app](http://68.media.tumblr.com/d4df26b7c674a25f389e61b273a95f98/tumblr_inline_ojfyi9kQkS1qag9g1_1280.png)
+![sando app]({{ site.baseurl }}/images/sandwich-about.png)
 
 The form for updating a sandwich will have a nested field for adding a new comment which in turn has a nested field for adding an eater.
 
@@ -111,7 +110,7 @@ def comment_params
 end
 ```
 
-And in the sandwich controller&rsquo;s update action I shall need:
+And in the sandwich controller's update action I shall need:
 
 ```ruby
 @comment = Comment.new(text: params[:sandwich][:comment][:text], sandwich_id: @sandwich.id)
