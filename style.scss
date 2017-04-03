@@ -32,9 +32,9 @@ html {
 }
 
 body {
-	background: $white;
+	background: $bg-color;
   font: 18px/1.4 $content-font;
-  color: $darkGray;
+  color: $text-color;
 }
 
 .container {
@@ -46,7 +46,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font;
-  color: $darkerGray;
+  color: $text-color;
   font-weight: bold;
 
   line-height: 1.7;
@@ -75,7 +75,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $text-color;
 }
 
 p {
@@ -83,11 +83,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $link-color;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $link-hover-color;
   }
 }
 
@@ -131,7 +131,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $secondary-text-color;
 }
 
 // Specify the color of the selection
@@ -170,7 +170,6 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -206,7 +205,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $title-color;
   cursor: pointer;
   font-family: $header-font;
   font-weight: 300;
@@ -216,7 +215,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $secondary-text-color;
   font-size: 16px;
 
   @include mobile {
@@ -239,14 +238,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $link-color;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $text-color;
     }
   }
 }
@@ -257,7 +256,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  // border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
@@ -268,9 +267,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    // border-left: 2px solid $text-color;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $text-color;
     font-size: 22px;
     font-style: italic;
   }
@@ -289,7 +288,6 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
 }
 
 footer {

@@ -1,23 +1,25 @@
-
 //
 // VARIABLES
 //
 
 // Colors
-$blue: #4183C4;
-
-// Grays
 $black: #000;
-$darkerGray: #222;
 $darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
 $white: #fff;
+$seafoam: #dcfcdc;
+$peach: #e3856b;
+$lilac: #bb8fce;
+$violet: #997aa6;
+
+// Typography
+$bg-color: $seafoam;
+$title-color: $darkGray;
+$text-color: $darkGray;
+$secondary-text-color: $peach;
+$link-color: $lilac;
+$link-hover-color: $violet;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
 $header-font: "ziclets", "Comic Sans", cursive;
 $content-font: "clarendon", Georgia, serif;
 
