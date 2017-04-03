@@ -19,8 +19,8 @@
 
 @font-face {
   font-family: 'inconsolata';
-  src: url('inconsolata-regular-webfont.woff2') format('woff2'),
-       url('inconsolata-regular-webfont.woff') format('woff');
+  src: url('fonts/inconsolata-webfont.woff2') format('woff2'),
+       url('fonts/inconsolata-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 4vw;
+  letter-spacing: 0.2vw;
   text-align: center;
   a {
     color: inherit;
@@ -232,7 +233,7 @@ img {
 
 footer {
   color: $secondary-text-color;
-  font-size: 2.6vh;
+  font-size: 2.4vh;
   margin: auto;
   text-align: center;
 }
