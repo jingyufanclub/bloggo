@@ -45,7 +45,6 @@ body {
 	background: $bg-color;
   font: 3vh/1.4em $content-font;
   color: $text-color;
-  cursor: pointer;
 }
 
 .container {
@@ -133,6 +132,12 @@ img {
 
 .date {
   color: $secondary-text-color;
+  a {
+    color: inherit;
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
 }
 
 // Specify the color of the selection
