@@ -200,20 +200,20 @@ img {
 }
 
 .posts > .post {
-  padding-bottom: 2em;
+  margin-bottom: 10vh;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
+  margin-bottom: 10vh;
   border-bottom: none;
 }
 
 .post {
   blockquote {
-    margin: 3vh 3vh;
+    margin: 4vh 4vh;
     color: $text-color;
     font-size: 2.8vh;
-    line-height: 1.4em;
+    line-height: 1.5em;
     font-style: italic;
   }
 
@@ -232,7 +232,7 @@ img {
 
 footer {
   color: $secondary-text-color;
-  font-size: 2.8vh;
+  font-size: 2.6vh;
   margin: auto;
   text-align: center;
 }
