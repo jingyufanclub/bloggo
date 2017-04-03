@@ -35,14 +35,13 @@ html {
 
 body {
 	background: $bg-color;
-  font: 2vh/1.4em $content-font;
+  font: 3vh/1.4em $content-font;
   color: $text-color;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  margin: auto;
+  max-width: 90vw;
   width: 100%;
 }
 
