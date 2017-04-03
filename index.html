@@ -12,9 +12,9 @@ layout: default
         {{ post.content }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
-        {{ post.date: "%B %e %Y" }}
-      </a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more"><div class="date">
+        {{ post.date | date: "%B %e %Y" }}
+      </div></a>
     </article>
   {% endfor %}
 </div>
