@@ -8,8 +8,9 @@ name: Dunce Caps for Cats Dot Com
 # Short bio or description (displayed in the header)
 description: Use value and exchange value are boring and sad concepts :)
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-# avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+# Do not show future dated posts
+
+future: false
 
 #
 # Flags below are optional
