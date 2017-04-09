@@ -3,6 +3,7 @@ layout: post
 title: Learn Me a Haskell!
 date: '2017-02-07T17:46:49-05:00'
 tags: []
+published: false
 ---
 My friend who teaches linguistics at Rutgers sent me his Github repo for Haskell exercises designed to introduce his students to computational semantics. Computational semantics uses the results of studying the logical aspects of meaning, i.e. formal semantics, to implement programs that process natural language. Naturally, I decided to learn Haskell so I can woo him through pull requests to his class assignments.
 
