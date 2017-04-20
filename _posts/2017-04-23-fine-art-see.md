@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HARVARD
+title: Fine Art, See?
 ---
 
 [experimental endpoint](https://github.com/harvardartmuseums/api-docs/blob/master/experimental.md)
@@ -10,8 +10,10 @@ title: HARVARD
 We went with the plain old object endpoint user generated keyword. I like to do this with mundane words like dog and pink. my two fave images are
 
 ![white dog biting brown dog](http://nrs.harvard.edu/urn-3:HUAM:INV156245_dynmc?width=3000&height=3000)
+*[Untitled (white dog biting brown dog)](http://www.harvardartmuseums.org/art/158697) courtesy Harvard Art Museums*
 
 ![bulldog in pink bathroom](http://nrs.harvard.edu/urn-3:HUAM:INV156243_dynmc?width=3000&height=3000)
+*[Untitled (bulldog in pink bathroom)](http://www.harvardartmuseums.org/collections/object/158716) courtesy Harvard Art Museums*
 
 Images on this website are available to download for personal, noncommercial use, including for publication on personal websites and blogs. As a courtesy, please include the credit line “Harvard Art Museums” as well as the original image URL.
 http://www.harvardartmuseums.org/collections/object/158697
