@@ -54,7 +54,7 @@ confidence: 0.83
 }
 ]
 ```
-LOL! We found that Google Vision can be used to analyze a photograph for emotions, e.g `surpriseLikelihood: "VERY_UNLIKELY"`, and hats `headwearLikelihood: "VERY_LIKELY"`, and can also determine the coordinates of facial features. There are a lot of attributes in the experimental endpoint that would be fun to play with, but for this project we decided to go with the [object endpoint](https://github.com/harvardartmuseums/api-docs/blob/master/object.md) to return more reliable results based on user-generated keywords. Along with the standard catalogue descriptors, it has fields for provenance, accession year, and total page views that may yield some surprises.
+LOL! We found that Google Vision can be used to analyze a photograph for emotions, e.g. `surpriseLikelihood: "VERY_UNLIKELY"`, and hats `headwearLikelihood: "VERY_LIKELY"`, and can also determine the coordinates of facial features. There are a lot of attributes in the experimental endpoint that would be fun to play with, but for this project we decided to go with the [object endpoint](https://github.com/harvardartmuseums/api-docs/blob/master/object.md) to return more reliable results based on user-generated keywords. Along with the standard catalogue descriptors, it has fields for provenance, accession year, and total page views that may yield some surprises.
 
 I like to search the collection with mundane words like dog and pink. My two favorite images so far are:
 
