@@ -138,8 +138,9 @@ img {
 
 img + em {
   display: block;
-  text-align: center;
   font-size: 80%;
+  line-height: 1.6em;
+  text-align: center;
 }
 
 // Fixes images in popup boxes from Google Translate
