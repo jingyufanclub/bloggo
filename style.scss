@@ -167,6 +167,10 @@ img + em {
   color: $pink;
 }
 
+h1::selection, h2::selection {
+  text-decoration: underline wavy;
+}
+
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
