@@ -167,8 +167,24 @@ img + em {
   color: $pink;
 }
 
-h1::selection, h2::selection {
-  text-decoration: underline wavy;
+li:nth-child(1n)::-moz-selection  {
+  color: $lilacLite;
+}
+li:nth-child(2n)::-moz-selection {
+  color: $periwinkle;
+}
+li:nth-child(3n)::-moz-selection {
+  color: $lilac;
+}
+
+li:nth-child(1n)::selection  {
+  color: $lilacLite;
+}
+li:nth-child(2n)::selection {
+  color: $periwinkle;
+}
+li:nth-child(3n)::selection {
+  color: $lilac;
 }
 
 // Nicolas Gallagher's micro clearfix hack
