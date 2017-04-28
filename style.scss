@@ -167,7 +167,7 @@ img + em {
   color: $pink;
 }
 
-li:nth-child(1n)::-moz-selection  {
+li:nth-child(n)::-moz-selection  {
   color: $lilacLite;
 }
 li:nth-child(2n)::-moz-selection {
@@ -177,7 +177,7 @@ li:nth-child(3n)::-moz-selection {
   color: $lilac;
 }
 
-li:nth-child(1n)::selection  {
+li:nth-child(n)::selection  {
   color: $lilacLite;
 }
 li:nth-child(2n)::selection {
