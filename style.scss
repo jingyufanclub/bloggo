@@ -131,7 +131,8 @@ strong, b {
 img {
   border-radius: 1vh;
   align-self: center;
-  width: 88vw;
+  min-width: 88vw;
+  max-width: 88vw;
 }
 
 img + em {
