@@ -28,10 +28,9 @@ table {
     float: left;
     }
     tr:nth-child(odd) {background-color:#fff4f4}
-    td {padding: 8px;
-        font-size: 0.8em;
+    td {padding: 4px;
+        font-size: 0.7em;
         text-align: left;
-        width: 33%;
       }
 </style>
 <table><tr><td>and</td><td>-&gt;</td><td>I</td></tr><tr><td>I</td><td>-&gt;</td><td>ran</td></tr><tr><td>ran</td><td>-&gt;</td><td>I</td></tr><tr><td>I</td><td>-&gt;</td><td>ran</td></tr><tr><td>ran</td><td>-&gt;</td><td>so</td></tr><tr><td>so</td><td>-&gt;</td><td>far</td></tr><tr><td>far</td><td>-&gt;</td><td>away</td></tr><tr><td>away</td><td>-&gt;</td><td>I</td></tr><tr><td>I</td><td>-&gt;</td><td>just</td></tr><tr><td>just</td><td>-&gt;</td><td>ran</td></tr></table>
@@ -42,14 +41,14 @@ table {
    float: left;
     }
     tr:nth-child(odd) {background-color:#fff4f4}
-    td {padding: 8px;
+    td {padding: 4px;
+        font-size: 0.7em;
         text-align: left;
-        width: 33%;
       }
 </style>
-<table><tr><td>and I</td><td>-&gt;</td><td>ran</td></tr><tr><td>I ran</td><td>-&gt;</td><td>I</td></tr><tr><td>ran I</td><td>-&gt;</td><td>ran</td></tr><tr><td>I ran</td><td>-&gt;</td><td>so</td></tr><tr><td>ran so</td><td>-&gt;</td><td>far</td></tr><tr><td>so far</td><td>-&gt;</td><td>away</td></tr><tr><td>far away</td><td>-&gt;</td><td>I</td></tr><tr><td>away I</td><td>-&gt;</td><td>just</td></tr><tr><td>I just</td><td>-&gt;</td><td>ran</td></tr><tr><td>.</td><td></td><td></td></tr>
+<table><tr><td>and I</td><td>-&gt;</td><td>ran</td></tr><tr><td>I ran</td><td>-&gt;</td><td>I</td></tr><tr><td>ran I</td><td>-&gt;</td><td>ran</td></tr><tr><td>I ran</td><td>-&gt;</td><td>so</td></tr><tr><td>ran so</td><td>-&gt;</td><td>far</td></tr><tr><td>so far</td><td>-&gt;</td><td>away</td></tr><tr><td>far away</td><td>-&gt;</td><td>I</td></tr><tr><td>away I</td><td>-&gt;</td><td>just</td></tr><tr><td>I just</td><td>-&gt;</td><td>ran</td></tr><tr><td>&nbsp;</td><td></td><td></td></tr>
 </table>
-
+<img>
 *Illustrated Markov Chain*
 
 Output will depend on size of your input corpus — the larger the training dataset the better, although too large a sample size and your output will be exactly your input.
