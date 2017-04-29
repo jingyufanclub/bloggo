@@ -36,6 +36,11 @@
 /* BASE RULES */
 /**************/
 
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
 body {
 	background: $bg-color;
   color: $text-color;
@@ -131,8 +136,7 @@ strong, b {
 img {
   border-radius: 1vh;
   align-self: center;
-  min-width: 88vw;
-  max-width: 88vw;
+  width: 88vw;
 }
 
 img + em {
