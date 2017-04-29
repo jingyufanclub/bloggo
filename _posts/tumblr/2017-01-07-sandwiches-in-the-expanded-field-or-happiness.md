@@ -49,7 +49,7 @@ And in the sandwiches controller I must whitelist the new associated params:
 
 ```ruby
 def sandwich_params
-  params.require(:sandwich).permit(:ingredients, :date, :location, :price, :tasting_notes, eater_ids: [], eater_attributes: [:id, :name], comment_attributes: [:text, :sandwich_id, :eater_id])
+  params.require(:sandwich).permit( :ingredients, :date, :location, :price, :tasting_notes, eater_ids: [], eater_attributes: [:id, :name], comment_attributes: [:text, :sandwich_id, :eater_id])
 end
 ```
 
@@ -106,7 +106,7 @@ and whitelisted the attributes in the comment controller:
 
 ```ruby
 def comment_params
-  params.require(:comment).permit(:text, :sandwich_id, :eater_id, eater_attributes: [:id, :name])
+  params.require(:comment).permit( :text, :sandwich_id, :eater_id, eater_attributes: [:id, :name])
 end
 ```
 
