@@ -27,8 +27,8 @@ In your CSS file you can write `img + em { }` where the '+' combinator selects t
 img + em {
   display: block;
   font: 2vh/1.6em $content-font;
+  font-style: italic;
   text-align: center;
-  text-decoration: underline wavy;
 }
 ```
 And if you write `{display: block; text-align: center;}` you can center that caption. Whee!
