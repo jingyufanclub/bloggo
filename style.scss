@@ -44,9 +44,10 @@ body {
 
 .container {
   display: flex;
+  justify-content: center;
   margin: 10vh auto;
   width: 88vw;
-  padding: 0; 
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,7 +73,6 @@ h1 {
 h2 {
   font-size: 4vw;
   letter-spacing: 0.2vw;
-  text-align: center;
   a {
     color: inherit;
   }
@@ -136,8 +136,7 @@ img {
 
 img + em {
   display: block;
-  font-size: 82%;
-  line-height: 1.6em;
+  font: 2vh/1.6em $content-font;
   text-align: center;
   text-decoration: underline wavy;
 }

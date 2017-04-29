@@ -26,8 +26,7 @@ In your CSS file you can write `img + em { }` where the '+' combinator selects t
 ```css
 img + em {
   display: block;
-  font-size: 80%;
-  line-height: 1.6em;
+  font: 2vh/1.6em $content-font;
   text-align: center;
   text-decoration: underline wavy;
 }
