@@ -44,7 +44,6 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
   margin: 10vh auto;
   width: 88vw;
   padding: 0;
@@ -54,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $text-color;
   font-family: $header-font;
   line-height: 1.4;
+  text-align: center;
   margin: 0;
   padding: 0;
 
@@ -210,11 +210,11 @@ li:nth-child(3n)::selection {
 }
 
 .masthead {
-  text-align: center;
+
 }
 
 .site-info {
-  text-align: center;
+  
 }
 
 .site-description {
