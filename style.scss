@@ -46,6 +46,7 @@ body {
   display: flex;
   margin: 10vh auto;
   width: 88vw;
+  padding: 0; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,14 +64,13 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 5vw;
   letter-spacing: 0.2vw;
-  margin-bottom: 5vh;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 4vh;
+  font-size: 4vw;
   letter-spacing: 0.2vw;
   text-align: center;
   a {
@@ -130,7 +130,8 @@ strong, b {
 
 img {
   border-radius: 1vh;
-  width: 100%;
+  align-self: center;
+  width: 88vw;
 }
 
 img + em {
@@ -206,7 +207,7 @@ li:nth-child(3n)::selection {
 //
 
 .wrapper-masthead {
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 
 .masthead {
@@ -240,14 +241,6 @@ li:nth-child(3n)::selection {
     font-size: 2.8vh;
     line-height: 1.5em;
     font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    font-size: 15px;
   }
 }
 
