@@ -43,13 +43,13 @@ html {
 
 body {
 	background: $bg-color;
-  font: 3vh/1.4em $content-font;
   color: $text-color;
+  font: 3vh/1.4em $content-font;
 }
 
 .container {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   margin: 10vh auto;
   width: 88vw;
@@ -131,16 +131,16 @@ strong, b {
 }
 
 img {
-  min-width: 88vw;
-  max-width: 88vw;
   border-radius: 1vh;
+  width: 100%;
 }
 
 img + em {
   display: block;
-  font-size: 80%;
+  font-size: 82%;
   line-height: 1.6em;
   text-align: center;
+  text-decoration: underline wavy;
 }
 
 // Fixes images in popup boxes from Google Translate

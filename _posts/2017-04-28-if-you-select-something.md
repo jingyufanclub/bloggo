@@ -34,4 +34,4 @@ li:nth-child(3n)::selection {
   color: $lilac;
 }
 ```
-On selection, The first element in the list will turn a light lilac color, followed by the second element in periwinkle, and the third in a darker lilac. The colors will repeat in order as more items are added to the list. Pretty!
+On selection, The first element in the list will turn a light lilac color, followed by every second element in periwinkle, and every third in a darker lilac. The colors will repeat in order as more items are added to the list. Pretty!
