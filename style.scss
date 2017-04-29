@@ -48,18 +48,14 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  margin: 10vh auto;
+  margin: auto;
   width: 88vw;
-  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $text-color;
   font-family: $header-font;
   line-height: 1.4;
-  text-align: center;
   margin: 0;
   padding: 0;
 
@@ -136,8 +132,7 @@ strong, b {
 
 img {
   border-radius: 1vh;
-  align-self: center;
-  width: 88vw;
+  width: 100%;
 }
 
 img + em {
@@ -212,22 +207,21 @@ li:nth-child(3n)::selection {
 //
 
 .wrapper-masthead {
-  margin-bottom: 2vh;
+  margin: 10vh 0 5vh 0;
 }
 
 .masthead {
-
+  margin: 0;
 }
 
 .site-info {
-
+  text-align: center;
 }
 
 .site-description {
   color: $secondary-text-color;
   font-size: 2.4vw;
   line-height: 1.5em;
-  text-align: center;
 }
 
 .posts > .post {
@@ -246,6 +240,9 @@ li:nth-child(3n)::selection {
     font-size: 2.8vh;
     line-height: 1.5em;
     font-style: italic;
+  }
+  h2{
+    text-align: center;
   }
 }
 

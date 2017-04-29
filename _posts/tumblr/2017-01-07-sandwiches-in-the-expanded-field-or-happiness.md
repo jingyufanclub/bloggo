@@ -106,7 +106,7 @@ and whitelisted the attributes in the comment controller:
 
 ```ruby
 def comment_params
-  params.require(:comment).permit(:text, :sandwich_id, :eater_id, eater_attributes: [:id, :name])
+  params.require(:comment).permit( :text, :sandwich_id, :eater_id, eater_attributes: [:id, :name])
 end
 ```
 

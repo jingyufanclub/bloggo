@@ -15,8 +15,8 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
+    <div class="container">
+      <div class="wrapper-masthead">
         <header class="masthead clearfix">
           <div class="site-info">
             <h1><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
@@ -26,21 +26,16 @@
           </div>
         </header>
       </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
+      <div id="main" role="main">
+        {{ content }}
+      </div>
+      <div class="wrapper-footer">
         <footer class="colophon">
           <p>Comments? ❥ <a href="https://github.com/jingyufanclub/blog/issues" target="_blank">Create an issue.</a></p>
           © Jing Yu 2016 – {{ site.time | date: '%Y' }}
         </footer>
       </div>
     </div>
-
     {% include analytics.html %}
   </body>
 </html>
