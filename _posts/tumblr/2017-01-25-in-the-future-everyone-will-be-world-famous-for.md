@@ -29,6 +29,7 @@ table {
     }
     tr:nth-child(odd) {background-color:#fff4f4}
     td {padding: 8px;
+        font-size: 0.8em;
         text-align: left;
         width: 33%;
       }
