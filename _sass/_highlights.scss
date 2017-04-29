@@ -1,7 +1,6 @@
 
 .highlight {
-  background-color: $pinkLite;
-  margin: 1em auto;
+  background-color: $pinkLite
   padding: 1em;
   white-space: pre-wrap;
 }
@@ -10,7 +9,6 @@ code, pre {
   border-radius: 1vh;
   font-family: $monospace;
   font-size: 2.2vh;
-  width: 88vw;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
