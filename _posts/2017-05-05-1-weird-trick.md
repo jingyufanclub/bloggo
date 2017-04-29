@@ -25,9 +25,8 @@ In your CSS file you can write `img + em { }` where the '+' combinator selects t
 
 ```css
 img + em {
+  font: italic 69%/1.5em $content-font;
   display: block;
-  font-size: 2vh;
-  font-style: italic;
   text-align: center;
 }
 ```
