@@ -36,11 +36,6 @@
 /* BASE RULES */
 /**************/
 
-html {
-  box-sizing: border-box;
-  font-size: 100%;
-}
-
 body {
 	background: $bg-color;
   color: $text-color;
@@ -50,33 +45,37 @@ body {
 .container {
   display: flex;
   margin: 10vh auto;
-  padding: 0;
   width: 88vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $text-color;
   font-family: $header-font;
-  line-height: 1.4em;
+  line-height: 1.4;
   margin: 0;
   padding: 0;
 
   @include mobile {
-    line-height: 1.2em;
+    line-height: 1.2;
   }
 }
 
 h1 {
-  font-size: 4vh;
+  font-size: 5vw;
   letter-spacing: 0.2vw;
-  text-align: center;
+  margin-bottom: 5vh;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 4vh;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  a {
+    color: inherit;
+  }
 }
 
 p {
@@ -215,21 +214,14 @@ li:nth-child(3n)::selection {
 }
 
 .site-info {
-  margin: auto;
-}
-
-.site-name {
-  color: $title-color;
-  font-family: $header-font;
-  font-size: 5vw;
-  letter-spacing: 0.2vw;
-  margin-bottom: 5vh;
+  text-align: center;
 }
 
 .site-description {
   color: $secondary-text-color;
-  font-size: 2.5vw;
+  font-size: 2.4vw;
   line-height: 1.5em;
+  text-align: center;
 }
 
 .posts > .post {
@@ -248,6 +240,14 @@ li:nth-child(3n)::selection {
     font-size: 2.8vh;
     line-height: 1.5em;
     font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    font-size: 15px;
   }
 }
 
