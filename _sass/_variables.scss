@@ -25,9 +25,9 @@ $link-color: $lilac;
 $link-hover-color: $violet;
 
 // Font stacks
-$header-font: "ziclets", "Comic Sans MS", cursive;
-$content-font: "clarendon", Georgia, serif;
-$monospace: "inconsolata", Monaco, monospace;
+$header-font: "ziclets", "Comic Sans", "Comic Sans MS", fantasy, cursive;
+$content-font: "clarendon", Palatino, Garamond, serif;
+$monospace: "inconsolata", Monaco, "Lucida Console", monospace;
 
 // Mobile breakpoints
 @mixin mobile {
