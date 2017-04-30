@@ -10,7 +10,7 @@ description: Use value and exchange value are boring and sad concepts :)
 
 # Do not show future dated posts
 
-future: false
+future: true
 
 #
 # Flags below are optional
