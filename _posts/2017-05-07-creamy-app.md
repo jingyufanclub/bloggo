@@ -24,18 +24,19 @@ end
 ```
 Using `price` and `size`, I wrote a method to find the cost per unit. And with `times_purchased` I can calculate the total sum of money I've spent on all these products which is displayed on the index page. With `favorite` and `current_rotation`, you can sort by which products I like the most and which I currently use in my skin care routine, denoted by "♥" and "☽" respectively.
 
-In my database, I made a separate table for `formats` that lists the different types of products, e.g. daytime cream, nighttime cream, emulsion, sheet mask, clay mask, etc. My `creams` table as an attribute of `format_id` and in models I write a format `has_many :creams` and a cream `belongs_to :format`. In a recent conversation I was asked if a product can only be in one format, could not the format exist in an enum array as an attribute of the creams table instead of as a stand-alone table.
+In my database, I made a separate table for formats that lists the different types of products, e.g. daytime cream, nighttime cream, emulsion, sheet mask, clay mask, etc. My creams table has an attribute of `format_id` and in models I write a format `has_many :creams` and a cream `belongs_to :format`. In a recent conversation I was asked if a product can only be in one format, could not the format exist in an enum array as an attribute of the creams table instead of as a stand-alone table.
 
->An enum type is a special data type that enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it.  
+>An enum type is a special data type that enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it.
+—[Java Documentation](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html)
 
-ActiveRecord::Enum is available in Rails since 4.1, and ClassyEnum is a gem you can use with Ruby. So I can rewrite my cream model like so:
+ActiveRecord::Enum is available in Rails since 4.1, and ClassyEnum is a gem you can use with Ruby. I can rewrite my cream model like so:
 ```ruby
 class Cream < ApplicationRecord
   enum format: [:essence, :mist, :emulsion, :cream, :gel]
-  # And so on; there are currently 22 cream formats in my collection.
+  # *And so on; there are currently 22 cream formats in my collection.*
 end
 ```
-And my database declaration would have this attribute:
+And my database declaration would have this attribute instead of `t.integer :format_id`:
 ```ruby
 create_table :creams do |t|
   t.column :format, :integer, default: 0
