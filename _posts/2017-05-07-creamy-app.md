@@ -1,0 +1,44 @@
+---
+layout: post
+title: "the fat, flaccid flesh of a pig’s teat"
+---
+Today I learned the Chinese characters nāngchuài 囊膪 that mean ["the fat, flaccid flesh of a pig’s teat"](http://languagelog.ldc.upenn.edu/nll/?p=32518). What does this have to do with coding, you ask. Nothing. However, hydrolyzed pig collagen is a featured ingredient in many Asian skincare products.
+
+I'm an avid user of Asian skincare products and have been keeping a spreadsheet of all my purchases with a notable ingredients list and links to PubMed articles I've read while researching their efficacy. I want to find the best products for my skin type and keep a catalogue of the most effective active ingredients to reference when I'm deciding on a new purchase. Then I made the spreadsheet into a Rails app called [Creamy](http://creamy.jingyufanclub.co/). I saved my spreadsheet in comma separated values format and used the Ruby class 'csv' to seed my database with this file. This is the information I wanted for each product:
+```ruby
+class CreateCreams < ActiveRecord::Migration[5.0]
+  def change
+    create_table :creams do |t|
+      t.string :name
+      t.string :brand
+      t.decimal :price
+      t.integer :size
+      t.string :notes
+      t.integer :times_purchased, default: 1
+      t.integer :format_id
+      t.boolean :favorite, default: false
+      t.boolean :current_rotation, default: false
+    end
+  end
+end
+```
+Using `price` and `size`, I wrote a method to find the cost per unit. And with `times_purchased` I can calculate the total sum of money I've spent on all these products which is displayed on the index page. With `favorite` and `current_rotation`, you can sort by which products I like the most and which I currently use in my skin care routine, denoted by "♥" and "☽" respectively.
+
+In my database, I made a separate table for `formats` that lists the different types of products, e.g. daytime cream, nighttime cream, emulsion, sheet mask, clay mask, etc. My `creams` table as an attribute of `format_id` and in models I write a format `has_many :creams` and a cream `belongs_to :format`. In a recent conversation I was asked if a product can only be in one format, could not the format exist in an enum array as an attribute of the creams table instead of as a stand-alone table.
+
+>An enum type is a special data type that enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it.  
+
+So I can rewrite my cream model like so:
+```ruby
+class Cream < ApplicationRecord
+  enum format: [:essence, :mist, :emulsion, :cream, :gel]
+  # And so on; there are currently 22 cream formats.
+end
+```
+And my database declaration would have this attribute:
+```ruby
+create_table :creams do |t|
+  t.column :format, :integer, default: 0
+end
+```
+After some consideration, I decided that enum is not the way to go in this case. My original design of the database allows that there are products in formats I have not tried or am not even aware of, and I need to be able to dynamically update the list of formats as I encounter them. To wit, I just bought this [Enzymatic Exfoliation Powder](http://www.skinactives.com/Enzymatic-Exfoliation-Powder.html) from Skin Actives and it comes in a powder form that I have never used. I don't know what enzymatic cleansing means and I'd normally research a product a bit more, but the novelty of it intrigued me. I'll add this to the app once it arrives, so check back for the ingredients list and my notes. Currently, full CRUD actions are reserved for only me. I'll be adding a search feature soon.
