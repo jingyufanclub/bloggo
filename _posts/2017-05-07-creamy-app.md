@@ -28,11 +28,11 @@ In my database, I made a separate table for `formats` that lists the different t
 
 >An enum type is a special data type that enables for a variable to be a set of predefined constants. The variable must be equal to one of the values that have been predefined for it.  
 
-So I can rewrite my cream model like so:
+ActiveRecord::Enum is available in Rails since 4.1, and ClassyEnum is a gem you can use with Ruby. So I can rewrite my cream model like so:
 ```ruby
 class Cream < ApplicationRecord
   enum format: [:essence, :mist, :emulsion, :cream, :gel]
-  # And so on; there are currently 22 cream formats.
+  # And so on; there are currently 22 cream formats in my collection.
 end
 ```
 And my database declaration would have this attribute:
