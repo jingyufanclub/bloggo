@@ -33,7 +33,7 @@ ActiveRecord::Enum is available in Rails since 4.1, and ClassyEnum is a gem you 
 ```ruby
 class Cream < ApplicationRecord
   enum format: [:essence, :mist, :emulsion, :cream, :gel]
-  # *And so on; there are currently 22 cream formats in my collection.*
+  # And so on; there are currently 22 cream formats in my collection.
 end
 ```
 And my database declaration would have this attribute instead of `t.integer :format_id`:
