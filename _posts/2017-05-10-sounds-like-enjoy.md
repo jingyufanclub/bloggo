@@ -18,4 +18,4 @@ body {
   url('../images/tangerine.png');
 }
 ```
-I played around with the dimensions to get the effect I wanted. I can imagine adjusting the transparency of the images to mix new colors where the tiles overlap. And even though the full pattern looks complex, I can keep the file size fairly small. After compressing the images with [TinyPNG](https://tinypng.com/), the file sizes ranged from 5kb to 20kb each. LaCroix, please send me soda!
+You can see the result [here](http://jingyufanclub.co/la-croy/). I played around with the dimensions to get the effect I wanted. I can imagine adjusting the transparency of the images to mix new colors where the tiles overlap. And even though the full pattern looks complex, I can keep the file size fairly small. After compressing the images with [TinyPNG](https://tinypng.com/), the file sizes ranged from 5kb to 20kb each. LaCroix, please send me soda!
