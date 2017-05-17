@@ -6,4 +6,4 @@ A brief diversion: I'm delighted to announce that a pair of my custom piñatas a
 
 You probably did not know that New York Magazine selected my work for ["Best Custom Piñatas"](http://nymag.com/weddings/planner/2015/winter/all-custom-everything/) in their Winter 2015 Weddings issue. Isn't that something.
 
-If you'd like to see my other work, I have an installation of textiles, prints, and ceramics in The Wassaic Project's 2017 Summer Exhibition  [Vagabond Time Killers](http://wassaicproject.org/programming/exhibitions/upcoming/summer-2017-vagabond-time-killers/) on view from May 20 to September 23.
+If you'd like to see my other work, I have an installation of textiles, prints, and ceramics in The Wassaic Project's 2017 Summer Exhibition [Vagabond Time Killers](http://wassaicproject.org/programming/exhibitions/upcoming/summer-2017-vagabond-time-killers/) on view from May 20 to September 23.
