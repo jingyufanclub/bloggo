@@ -2,7 +2,7 @@
 layout: post
 title: Just Shufflin'
 ---
-Last week I made a [demonstration](http://jingyufanclub.co/la-croy/) using images with prime-numbered dimensions to build a non-repeating background pattern. Then I decided to create a generator that would randomly select a number of images from my collection and change their display order to make a new wallpaper pattern.
+Last week I made a [demonstration](http://jingyufanclub.co/blog/sounds-like-enjoy/) using images with prime-numbered dimensions to build a non-repeating background pattern. Then I decided to create a generator that would randomly select a number of images from my collection and change their display order to make a new wallpaper pattern.
 
 ![la croy wallpaper]({{ site.baseurl }}/images/lacroy.jpg)
 *[I <3 LaCroix](http://jingyufanclub.co/la-croy/)*

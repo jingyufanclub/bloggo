@@ -2,7 +2,7 @@
 layout: post
 title: Sounds Like Retina Display
 ---
-After I finished writing my [La Croy Pattern Generator](http://jingyufanclub.co/la-croy/) last week, I decided to add in the HTML5 `canvas` element so users may download the image as a wallpaper for their phone or computer.  
+After I finished writing my [La Croy Pattern Generator](http://jingyufanclub.co/blog/just-shufflin/) last week, I decided to add in the HTML5 `canvas` element so users may download the image as a [wallpaper](http://jingyufanclub.co/la-croy/) for their phone or computer.  
 
 Here are some things to consider when starting a canvas project. First, you ought to add a fallback behavior, e.g. an alternate image or text, directly between the opening and closing `<canvas>` tags. Browsers that do not support `canvas` will ignore the tags and display the fallback content.  
 
@@ -52,7 +52,6 @@ function download(link, filename) {
   link.href = canvas.toDataURL();
   link.download = filename;
 }
-
 downloadButton.addEventListener('click', function() {
   download(this, 'livelacroix.png')
   }, false)
