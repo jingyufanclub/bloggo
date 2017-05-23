@@ -1,38 +1,34 @@
 ---
 layout: post
-title: Sounds Like Enjoy - Finer points of "Retina" display
+title: Sounds Like Retina Display
 ---
-Some things to consider when starting a canvas project.
+After I finished writing my [La Croy Pattern Generator](http://jingyufanclub.co/la-croy/) last week, I decided to add in the HTML5 `canvas` element so users may download the image as a wallpaper for their phone or computer.  
 
-Add a fallback behavior, e.g. an alternate image or text, directly between the opening and closing `<canvas>` tags. Browsers that do not support `canvas` will ignore the tags and display the fallback content.  
+Here are some things to consider when starting a canvas project. First, you ought to add a fallback behavior, e.g. an alternate image or text, directly between the opening and closing `<canvas>` tags. Browsers that do not support `canvas` will ignore the tags and display the fallback content.  
 
-It's a good idea to include support for high pixel density (Retina) displays, especially if you will be using jpgs or pngs. One way to do this is to size your assets at twice their display size and sizing them down for the browser with CSS or JS.
+It is a also good idea to include support for high pixel density (Retina) displays, especially if you will be using JPGs or PNGs, so your images will still look crisp on those screens. (SVGs are scalable and will remain sharp on any display.) One way to do this is to size your assets at twice their display dimensions and then halve them in the browser with CSS or JS.
 
-Another way is to set up the canvas from the start to support HiDPI displays. [Apple's canvas guide](https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/HTML-canvas-guide/SettingUptheCanvas/SettingUptheCanvas.html) details how the backing store and pixel ratios work. From the guide, these are basic steps to detect HiDPI displays and draw your canvas accordingly with JavaScript. First, check whether the browser has `window.devicePixelRatio` defined. If it is greater than one, the browser is open on an HiDPI screen.
+Another way is to set up the canvas from the start to support HiDPI displays. [Apple's canvas guide](https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/HTML-canvas-guide/SettingUptheCanvas/SettingUptheCanvas.html) details how the backing store and pixel ratios work, and lists the steps to detect HiDPI displays and draw the canvas. First, check whether the browser has `window.devicePixelRatio` defined. If it is greater than one, the browser is open on an HiDPI screen.
 ```js
 function backingScale(context) {
-    if ('devicePixelRatio' in window) {
-        if (window.devicePixelRatio > 1) {
-            return window.devicePixelRatio;
-        }
+  if ('devicePixelRatio' in window) {
+    if (window.devicePixelRatio > 1) {
+        return window.devicePixelRatio;
     }
-    return 1;
+  }
+  return 1;
 }
 ```
 > Retina devices have a pixel ratio of 2 because there is a 2:1 ratio of display pixels to backing store pixels in both the x and y direction. Standard-resolution displays, on the other hand, map one backing store pixel to one display pixel, so their device pixel ratio will always be 1.
 
-Then I set up my canvas like so, using the newly determined scale factor to [transform the scale](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/scale) of the canvas accordingly:
+I set up the canvas like so, using the newly determined device pixel ratio to [transform the scale](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/scale) of the canvas accordingly:
 ```js
   const canvas = document.querySelector('canvas');
   const ctx = canvas.getContext('2d');
   const scaleFactor = backingScale(ctx);
   ctx.scale(scaleFactor, scaleFactor);
 ```
-Lastly, on
-backing store multiplier
-
-You must manually multiply your canvas pixel values by the device pixel ratio as demonstrated in Listing 1-2. Drawing instructions that refer to points in the coordinate space must also be multiplied by this backing scale to ensure your canvas is Retina-read
-
+I then drew the HiDPI canvas by multiplying the canvas pixel values by the device pixel ratio and set its width and height to the dimensions of the browser window. This would create a canvas larger than the window size and shrink it to fit for a higher number of pixels per inch.
 ```js
 function resizeCanvas() {
     let w = window.innerWidth;
@@ -50,3 +46,15 @@ function resizeCanvas() {
     }
   }
 ```
+Finally, I used the [`HTMLCanvasElement.toDataURL()` method](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL) to generate a download link for the full pattern.
+```js
+function download(link, filename) {
+  link.href = canvas.toDataURL();
+  link.download = filename;
+}
+
+downloadButton.addEventListener('click', function() {
+  download(this, 'livelacroix.png')
+  }, false)
+```
+Enjoy LaCroix and try a [La Croy wallpaper](http://jingyufanclub.co/la-croy/)!
