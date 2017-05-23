@@ -13,44 +13,44 @@ Another way is to set up the canvas from the start to support HiDPI displays. [A
 function backingScale(context) {
   if ('devicePixelRatio' in window) {
     if (window.devicePixelRatio > 1) {
-        return window.devicePixelRatio;
+        return window.devicePixelRatio
     }
   }
-  return 1;
+  return 1
 }
 ```
 > Retina devices have a pixel ratio of 2 because there is a 2:1 ratio of display pixels to backing store pixels in both the x and y direction. Standard-resolution displays, on the other hand, map one backing store pixel to one display pixel, so their device pixel ratio will always be 1.
 
 I set up the canvas like so, using the newly determined device pixel ratio to [transform the scale](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/scale) of the canvas accordingly:
 ```js
-  const canvas = document.querySelector('canvas');
-  const ctx = canvas.getContext('2d');
-  const scaleFactor = backingScale(ctx);
-  ctx.scale(scaleFactor, scaleFactor);
+  const canvas = document.querySelector('canvas')
+  const ctx = canvas.getContext('2d')
+  const scaleFactor = backingScale(ctx)
+  ctx.scale(scaleFactor, scaleFactor)
 ```
 I then drew the HiDPI canvas by multiplying the canvas pixel values by the device pixel ratio and set its width and height to the dimensions of the browser window. This would create a canvas larger than the window size and shrink it to fit for a higher number of pixels per inch.
 ```js
 function resizeCanvas() {
-    let w = window.innerWidth;
-    let h = window.innerHeight;
+    let w = window.innerWidth
+    let h = window.innerHeight
     if (scaleFactor > 1) {
-      canvas.width = w * scaleFactor;
-      canvas.height = h * scaleFactor;
-      canvas.style.width = w + 'px';
-      canvas.style.height = h + 'px';
-      draw();
+      canvas.width = w * scaleFactor
+      canvas.height = h * scaleFactor
+      canvas.style.width = w + 'px'
+      canvas.style.height = h + 'px'
+      draw()
     } else {
-      canvas.width = w;
-      canvas.height = h;
-      draw();
+      canvas.width = w
+      canvas.height = h
+      draw()
     }
   }
 ```
 Finally, I used the [`HTMLCanvasElement.toDataURL()` method](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL) to generate a download link for the full pattern.
 ```js
 function download(link, filename) {
-  link.href = canvas.toDataURL();
-  link.download = filename;
+  link.href = canvas.toDataURL()
+  link.download = filename
 }
 downloadButton.addEventListener('click', function() {
   download(this, 'livelacroix.png')
