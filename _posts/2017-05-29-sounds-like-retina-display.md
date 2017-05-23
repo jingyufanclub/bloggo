@@ -2,11 +2,11 @@
 layout: post
 title: Sounds Like Retina Display
 ---
-After I finished writing my [La Croy Pattern Generator](http://jingyufanclub.co/blog/just-shufflin/) last week, I decided to add in the HTML5 `canvas` element so users may download the image as a [wallpaper](http://jingyufanclub.co/la-croy/) for their phone or computer.  
+After I finished writing my [La Croy Pattern Generator]({{ site.baseurl }}/just-shufflin/) last week, I decided to add in the HTML5 `canvas` element so users may download the image as a [wallpaper]({{ site.url }}/la-croy/) for their phone or computer.  
 
 Here are some things to consider when starting a canvas project. First, you ought to add a fallback behavior, e.g. an alternate image or text, directly between the opening and closing `<canvas>` tags. Browsers that do not support `canvas` will ignore the tags and display the fallback content.  
 
-It is a also good idea to include support for high pixel density (Retina) displays, especially if you will be using JPGs or PNGs, so your images will still look crisp on those screens. (SVGs are scalable and will remain sharp on any display.) One way to do this is to size your assets at twice their display dimensions and then halve them in the browser with CSS or JS.
+It is a also good idea to include support for high pixel density (Retina) displays, especially if you will be using JPGs or PNGs, so your images will look crisp on those screens. (SVGs are scalable and will remain sharp on any display.) One way to do this is to size your assets at twice their display dimensions and then halve them in the browser with CSS or JS.
 
 Another way is to set up the canvas from the start to support HiDPI displays. [Apple's canvas guide](https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/HTML-canvas-guide/SettingUptheCanvas/SettingUptheCanvas.html) details how the backing store and pixel ratios work, and lists the steps to detect HiDPI displays and draw the canvas. First, check whether the browser has `window.devicePixelRatio` defined. If it is greater than one, the browser is open on an HiDPI screen.
 ```js
