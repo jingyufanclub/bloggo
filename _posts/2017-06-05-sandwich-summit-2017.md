@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Sandwich Summit
+title: Sandwich Summit 2017
 ---
 The Sixth Annual Sandwich Summit will take place on September 23, 2017, and this year I am honored to be serving on the planning committee.
 
