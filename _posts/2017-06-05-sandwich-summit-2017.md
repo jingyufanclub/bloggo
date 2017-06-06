@@ -2,10 +2,9 @@
 layout: post
 title: Something Different
 ---
-The Sixth Annual Sandwich Summit will take place on September 23, 2017, and this year I am honored to be serving on the planning committee.
+The [Sixth Annual Sandwich Summit](http://sandwich-club.org/2017-sandwich-club-summit/) will take place on September 23, 2017, and this year I am honored to be serving on the planning committee.
 
 >The annual Sandwich Club Summit is a chance for fellow sandwich enthusiasts to come together and discuss pressing topics. The summit will include presentations, panels, workshops, a sandwich-themed exhibition and a grilled cheese bar. This year’s summit theme is “Something Different” and will focus on sides (chips, pickles, slaws, baked beans, beverage pairings, etc).
->—[Sandwich Club](http://sandwich-club.org/2017-sandwich-club-summit/)
 
 We are currently accepting proposals for [presentations, workshop, or demos](https://goo.gl/forms/TPDNyoYI4AnHSbcn2) and [Upper Crust](https://goo.gl/forms/7PCK7igTdjFn3Wgr1), the official publication of Sandwich Summit. Proposals may entail anything concretely or marginally related to sandwiches and their accoutrements. The open call closes on June 15th.
 
