@@ -201,6 +201,40 @@ li:nth-child(3n)::selection {
   color: $lilac;
 }
 
+.box {
+  height: 200px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee--up {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  animation: marquee-up 2.5s linear infinite;
+}
+
+@keyframes marquee-up {
+  0% { top: 100%; }
+  100% { top: -20%; }
+}
+
+.blink {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  animation: blink 700ms linear infinite;
+}
+
+@keyframes blink {
+   0% { opacity: 0; }
+   50% { opacity: 0; }
+   51% { opacity: 1; }
+   100% { opacity: 1; }
+}
+
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
