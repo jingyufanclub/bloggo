@@ -201,7 +201,7 @@ li:nth-child(3n)::selection {
   color: $lilac;
 }
 
-.box {
+.marquee-box {
   height: 200px;
   width: 80%;
   margin: 0 auto;
@@ -209,23 +209,34 @@ li:nth-child(3n)::selection {
   position: relative;
 }
 
-.marquee--up {
+.marquee-box div {
   width: 100%;
   position: absolute;
+}
+
+.marquee-up {
   text-align: center;
   animation: marquee-up 2.5s linear infinite;
 }
 
-@keyframes marquee-up {
-  0% { top: 100%; }
-  100% { top: -20%; }
+.marquee {
+  text-align: right;
+  animation: marquee 4s linear infinite;
 }
 
 .blink {
-  width: 100%;
-  position: absolute;
   text-align: center;
   animation: blink 700ms linear infinite;
+}
+
+@keyframes marquee-up {
+  0% { top: 100%; }
+  100% { top: -50%; }
+}
+
+@keyframes marquee {
+  0% { left: 50px; }
+  100% { left: -100%; }
 }
 
 @keyframes blink {

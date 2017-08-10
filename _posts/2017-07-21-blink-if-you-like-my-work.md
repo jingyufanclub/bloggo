@@ -2,8 +2,8 @@
 layout: post
 title: Blink If You Like My Work
 ---
-<div class="box">
-  <div class="marquee--up">  
+<div class="marquee-box">
+  <div class="marquee-up">  
     <p>
     😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎
     </p>

@@ -2,12 +2,12 @@
 layout: post
 title: Marquee Direction="Up"
 ---
-I wanted to reproduce the obsolete html tag `<marquee direction="up">` with CSS animation. Here is my demonstration on [Codepen](https://codepen.io/jingyufanclub/pen/wqdEYe) and you can see this effect in action in this [post]({{ site.baseurl }}/blink-if-you-like-my-work/).
+I wanted to replicate the obsolete html tag `<marquee direction="up">` with css animation. Here is my demonstration on [Codepen](https://codepen.io/jingyufanclub/pen/wqdEYe) and you can see this effect in action in this [post]({{ site.baseurl }}/blink-if-you-like-my-work/).
 
-First, I wrapped my marquee block inside `<div class="box">` so I could center this section on the page:
+First, I wrapped the marquee block inside `<div class="box">` so I can center this section on the page:
 ```html
 <div class="box">
-  <div class="marquee--up">
+  <div class="marquee-up">
     <p>
       😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎  😎
     </p>
@@ -24,7 +24,7 @@ And in CSS I created and used a keyframe animation:
   overflow: hidden;
   position: relative;
 }
-.marquee--up {
+.marquee-up {
   width: 100%;
   position: absolute;
   text-align: center;
@@ -32,6 +32,6 @@ And in CSS I created and used a keyframe animation:
 }
 @keyframes marquee-up {
   0% { top: 100%; }
-  100% { top: -20%; }
+  100% { top: -20px; }
 }
 ```
