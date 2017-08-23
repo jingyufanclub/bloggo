@@ -248,10 +248,10 @@ li:nth-child(3n)::selection {
 }
 
 .fade-in {
-  animation: fadeIn 1.2s ease-in-out;
+  animation: fade-in 1.2s ease-in-out;
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   0% {top: 8px; opacity: 0;}
   100% {top: 0; opacity: 1}
 }
