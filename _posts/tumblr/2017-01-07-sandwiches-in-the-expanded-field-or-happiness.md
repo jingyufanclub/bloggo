@@ -6,15 +6,15 @@ tags: []
 ---
 Sando Club is about friendship. Members eat sandwiches and collect stamps together in exchange for fun and prizes. Sandwich Club is about documentation. Members record their best sandwich meals and comments in a Google Sheet. [Sando Club](http://sandoclub.tumblr.com) is ephemeral; [Sandwich Club](http://sandwich-club.org/) is a database.
 
-![sando spreadsheet]({{ site.baseurl }}/images/sandwich-sheet.png)
+<img class="lazy-image" data-src="/blog/images/sandwich-sheet.png" alt="spreadsheet">
 
 You can access [Sandwich Club’s Goggle Sheet](https://docs.google.com/spreadsheets/d/1TsvTu_lRNoZ3KCCKp5bc0PejxO27zjj8PzoZa-UfUe0/edit#gid=1) via a link on their website. Anyone with the link can record sandwiches and comments. I saved this sheet as a comma-separated values (CSV) file and used Ruby’s CSV class methods to parse the file and seed the database for a Rails application. I wanted to preserve both the functions of the sheet and its ethos, i.e. anyone can access the database and add valid entries by code of honor, no user sign-up or login required.
 
-![sando app]({{ site.baseurl }}/images/sandwich-splash.png)
+<img class="lazy-image" data-src="/blog/images/sandwich-splash.png" alt="splash page">
 
 In the app you can view a list of all the sandwiches, see individual sandwich entries, view each member and a list of all the sandwiches she has eaten, add a new sandwich, and leave comments for each sandwich.
 
-![sando app]({{ site.baseurl }}/images/sandwich-add.png)
+<img class="lazy-image" data-src="/blog/images/sandwich-add.png" alt="add page">
 
 A particular challenge of adding a new sandwich is the ability to create a new eater and assign her to that sandwich. To do this I employed nested attributes.
 
@@ -78,7 +78,7 @@ And for the sandwich controller's create action:
 
 In these snippets you can see that I also have nested attributes for comments. On an individual sandwich page you can create a new comment to associate with that sandwich and at the same time create a new user for that comment.
 
-![sando app]({{ site.baseurl }}/images/sandwich-about.png)
+<img class="lazy-image" data-src="/blog/images/sandwich-about.png" alt="about sandwich club">
 
 The form for updating a sandwich will have a nested field for adding a new comment which in turn has a nested field for adding an eater.
 

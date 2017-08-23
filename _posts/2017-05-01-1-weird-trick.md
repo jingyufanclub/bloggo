@@ -4,7 +4,7 @@ title: 1 Weird Trick
 ---
 This blog is written with Markdown. You're probably wondering, "How did she make those cute image captions when Markdown doesn't handle text formatting like that?" It's a trick, you see.
 
-![a kitten croissando]({{ site.baseurl }}/images/croissando.jpg)
+<img class="lazy-image" data-src="/blog/images/croissando.jpg" alt="kitten croissandwich">
 *Untitled (a kitten croissando)*
 
 ```md

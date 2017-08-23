@@ -10,7 +10,7 @@ The [experimental endpoint](https://github.com/harvardartmuseums/api-docs/blob/m
 
 I found this image that is clearly a dog wearing a hat, shirt, and pants.
 
-![dog dressed as Donald Duck](http://ids.lib.harvard.edu/ids/view/42949180?width=3000&height=3000)
+<img class="lazy-image" data-src="http://ids.lib.harvard.edu/ids/view/42949180?width=3000&height=3000" alt="dog wearing a hat">
 *[Untitled (poodle wearing pants, shirt, and suspenders)](http://www.harvardartmuseums.org/collections/object/127188) courtesy Harvard Art Museums*
 
 However, the response shows that the Microsoft service suggested `captions: [{text: "a man sitting in the snow", confidence: 0.11904114499362317}]` and Imagga analyzed the image as
@@ -58,10 +58,10 @@ LOL! We found that Google Vision can be used to analyze a photograph for emotion
 
 I like to search the collection with mundane words like dog and pink. My two favorite images so far are:
 
-![white dog biting brown dog](http://nrs.harvard.edu/urn-3:HUAM:INV156245_dynmc?width=3000&height=3000)
+<img class="lazy-image" data-src="http://nrs.harvard.edu/urn-3:HUAM:INV156245_dynmc?width=3000&height=3000" alt="white dog biting brown dog">
 *[Untitled (white dog biting brown dog)](http://www.harvardartmuseums.org/art/158697) courtesy Harvard Art Museums*
 
-![bulldog in pink bathroom](http://nrs.harvard.edu/urn-3:HUAM:INV156243_dynmc?width=3000&height=3000)
+<img class="lazy-image" data-src="http://nrs.harvard.edu/urn-3:HUAM:INV156243_dynmc?width=3000&height=3000" alt="bulldog in pink bathroom">
 *[Untitled (bulldog in pink bathroom)](http://www.harvardartmuseums.org/collections/object/158716) courtesy Harvard Art Museums*
 
 Aren't they just terrific? It turns out both photos are by Ann E. Wulff from her series *Caged Tigers* published in the early 80s. I love them so much.

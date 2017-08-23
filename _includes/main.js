@@ -7,7 +7,7 @@ window.onload = function() {
     threshold: 1
   };
   let observer;
-
+  
   if ('IntersectionObserver' in window) {
     observer = new IntersectionObserver(handleIntersect, options);
     images.forEach(image => {
