@@ -2,7 +2,7 @@
 layout: post
 title: Astute Readers, Lazy Loaders
 ---
-Astute readers may notice that I have been employing certain CSS properties on this site as I [write]({{ site.baseurl }}/if-you-select-something/) [about]({{ site.baseurl }}/skip-it/) [them]({{ site.baseurl }}/last-one/). Today, I added lazy loading for images using the Intersection Observer API and Javascript, and I will tell you about it.
+Astute readers of this blog may notice that I have been employing certain CSS properties on this site as I [write]({{ site.baseurl }}/if-you-select-something/) [about]({{ site.baseurl }}/skip-it/) [them]({{ site.baseurl }}/last-one/). Today, I added lazy loading for images using the Intersection Observer API and Javascript, and I will tell you about it.
 
 Since this site uses infinite scroll for posts, I decided to load the images as they come into view rather than all at once. Here is a great overview of the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) with some examples. Because this API is still experimental, not all browsers support it and you will have to write a fall back.
 
@@ -12,7 +12,7 @@ First, in the HTML the image is given the class `"lazy-image"`, and instead of a
 <img class="lazy-image" data-src="/blog/images/lacroy.jpg" alt="enjoy la croy">
 ```
 
-With Javascript 
+With Javascript
 
 ```js
 const images = document.querySelectorAll(".lazy-image");
