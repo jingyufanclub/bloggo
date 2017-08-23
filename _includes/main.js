@@ -6,11 +6,18 @@ window.onload = function() {
     rootMargin: "-20px",
     threshold: 0.5
   };
+  let observer;
 
-  let observer = new IntersectionObserver(handleIntersect, options);
-  images.forEach(image => {
-    observer.observe(image);
-  })
+  if ('IntersectionObserver' in window) {
+    observer = new IntersectionObserver(handleIntersect, options);
+    images.forEach(image => {
+      observer.observe(image);
+    });
+  } else {
+    images.forEach(image => {
+      image.src = image.dataset.src;
+    })
+  }
 
   function handleIntersect(entries) {
     entries.forEach(entry => {
@@ -22,5 +29,4 @@ window.onload = function() {
       }
     })
   }
-
 }
