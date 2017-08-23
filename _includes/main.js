@@ -3,7 +3,7 @@ window.onload = function() {
   const images = document.querySelectorAll(".lazy-image");
   const options = {
     root: null,
-    rootMargin: "-50px",
+    rootMargin: "-20px",
     threshold: 0.5
   };
 
