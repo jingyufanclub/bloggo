@@ -11,7 +11,7 @@ function createObserver() {
   const options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.1
+    threshold: 0.05
   };
   if ('IntersectionObserver' in window) {
     observer = new IntersectionObserver(handleIntersect, options);
