@@ -3,4 +3,4 @@ layout: post
 title: Hello, World!
 ---
 
-![salem playing piano]({{ site.baseurl }}/images/salem.gif)
+<img class="lazy-image" data-src="images/salem.gif">

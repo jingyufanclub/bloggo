@@ -10,4 +10,4 @@ We are currently accepting proposals for [presentations, workshop, or demos](htt
 
 My collaborator Ashley Robinson and I shall demo Sando Club, an app to help you find a friend with whom to share a sandwich lunch. I'd mentioned a [sandwich app](http://jingyufanclub.co/blog/sandwiches-in-the-expanded-field-or-happiness/) on this blog before, but this is a different product that I will discuss in future posts. We are very excited for its debut and hope you can join us at the Summit!
 
-![Sandwich Summit Open Call](http://sandwich-club.org/wp-content/uploads/2017/05/RFP_v5-smoother.gif)
+<img class="lazy-image" data-src="http://sandwich-club.org/wp-content/uploads/2017/05/RFP_v5-smoother.gif">
