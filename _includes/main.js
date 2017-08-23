@@ -7,17 +7,17 @@ window.onload = function() {
     threshold: 1
   };
   let observer;
-  
-  if ('IntersectionObserver' in window) {
+
+  // if ('IntersectionObserver' in window) {
     observer = new IntersectionObserver(handleIntersect, options);
     images.forEach(image => {
       observer.observe(image);
     });
-  } else {
-    images.forEach(image => {
-      image.src = image.dataset.src;
-    })
-  }
+  // } else {
+  //   images.forEach(image => {
+  //     image.src = image.dataset.src;
+  //   })
+  // }
 
   function handleIntersect(entries) {
     entries.forEach(entry => {
