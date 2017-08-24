@@ -1,0 +1,53 @@
+.marquee-box {
+  height: 200px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-box div {
+  width: 100%;
+  position: absolute;
+}
+
+.marquee-up {
+  text-align: center;
+  animation: marquee-up 2.5s linear infinite;
+}
+
+.marquee {
+  text-align: right;
+  animation: marquee 4s linear infinite;
+}
+
+.blink {
+  text-align: center;
+  animation: blink 700ms linear infinite;
+}
+
+@keyframes marquee-up {
+  0% { top: 100%; }
+  100% { top: -50%; }
+}
+
+@keyframes marquee {
+  0% { left: 50px; }
+  100% { left: -100%; }
+}
+
+@keyframes blink {
+   0% { opacity: 0; }
+   50% { opacity: 0; }
+   51% { opacity: 1; }
+   100% { opacity: 1; }
+}
+
+.fade-in {
+  animation: fade-in 1.2s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {top: 8px; opacity: 0;}
+  100% {top: 0; opacity: 1}
+}
