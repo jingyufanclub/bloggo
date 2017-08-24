@@ -1,14 +1,18 @@
-window.onload = function() {
-  
-  console.log("meow!");
-  const images = document.querySelectorAll(".lazy-image");
+let images;
+
+window.addEventListener("load", function(event) {
+  console.log("meow")
+  images = document.querySelectorAll(".lazy-image");
+  createObserver();
+}, false);
+
+function createObserver() {
+  let observer;
   const options = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.3
+    threshold: 0.05
   };
-  let observer;
-
   if ('IntersectionObserver' in window) {
     observer = new IntersectionObserver(handleIntersect, options);
     images.forEach(image => {
@@ -19,16 +23,15 @@ window.onload = function() {
       image.src = image.dataset.src;
     });
   }
+}
 
-  function handleIntersect(entries) {
-    entries.forEach(entry => {
-      if (entry.intersectionRatio > 0) {
-        let img = entry.target;
-        img.src = img.dataset.src;
-        img.classList.add("fade-in");
-        observer.unobserve(img);
-      }
-    });
-  }
-
+function handleIntersect(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      let img = entry.target;
+      img.src = img.dataset.src;
+      img.classList.add("fade-in");
+      observer.unobserve(img);
+    }
+  });
 }

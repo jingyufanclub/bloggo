@@ -39,7 +39,7 @@ function createObserver() {
   }
 }
 ```
-The `intersectionRatio` is a number between 0.0 and 1.0 that indicates how much of the target is visible within the root. The callback checks that the target is visible and sets `src` to the `data-src` to load the image. It also adds `fade-in` class to the image for a tiny animation effect and removes the observer.
+The `intersectionRatio` is a number between 0.0 and 1.0 that indicates how much of the target is visible within the root. The callback checks that the target is visible and sets `src` to the `data-src` to load the image. It also adds `fade-in` class to the image for a tiny animation effect and removes the observer. Since I'm only checking whether the image is visible in the viewport and do not need to know by how much, I could instead use the Boolean property `entry.isIntersecting` for the if statement.
 ```js
 function handleIntersect(entries, observer) {
   entries.forEach(entry => {
