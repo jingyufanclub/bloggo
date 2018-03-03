@@ -6,7 +6,7 @@ tags: []
 ---
 These puns are getting worse. I’m sorry.
 
-I wanted to mention a couple of things not related [grid]({{ site.baseurl }}/grid-your-lions-for-css-grid) that I learned about CSS while making my [homepage](http://jingyufanclub.co). First, I used viewport units for some spacing and typography. One viewport unit is measured as 1/100th of the viewport size and can be height based (vh), width based (vw), or the smaller (vmin) or the larger (vmax) of the two. Thus the size of the element is a ratio of the window size and this is pretty handy for responsive design. I wrote one media query to slightly alter the layout and type size for smaller screens.
+I wanted to mention a couple of things not related [grid]({{ site.baseurl }}/grid-your-lions-for-css-grid) that I learned about CSS while making my [homepage](http://jingyufan.club). First, I used viewport units for some spacing and typography. One viewport unit is measured as 1/100th of the viewport size and can be height based (vh), width based (vw), or the smaller (vmin) or the larger (vmax) of the two. Thus the size of the element is a ratio of the window size and this is pretty handy for responsive design. I wrote one media query to slightly alter the layout and type size for smaller screens.
 
 I also used inline svg images for my social icons. The nice thing about inline svg is that you can style it using CSS, circumventing the need for javascript or other libraries. For example, I can change the color of images with icon class by using the svg fill property and also animate the transition.
 

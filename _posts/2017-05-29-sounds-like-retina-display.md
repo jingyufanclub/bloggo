@@ -56,4 +56,4 @@ downloadButton.addEventListener('click', function() {
   download(this, 'livelacroix.png')
   }, false)
 ```
-Enjoy LaCroix and try a [La-Croy wallpaper](http://jingyufanclub.co/la-croy/)!
+Enjoy LaCroix and try a [La-Croy wallpaper](http://jingyufan.club/la-croy/)!
