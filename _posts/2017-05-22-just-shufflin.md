@@ -2,10 +2,10 @@
 layout: post
 title: Just Shufflin'
 ---
-Last week I made a [demonstration]({{ site.baseurl }}/sounds-like-enjoy/) using images with prime-numbered dimensions to build a non-repeating background pattern. Then I decided to create a generator that would randomly select a number of images from my collection and change their display order to make a new wallpaper pattern.
+Last week I made a [demonstration](http://jingyufan.club/sounds-like-enjoy/) using images with prime-numbered dimensions to build a non-repeating background pattern. Then I decided to create a generator that would randomly select a number of images from my collection and change their display order to make a new wallpaper pattern.
 
 <img class="lazy-image" data-src="/blog/images/lacroy.jpg" alt="enjoy la croy">
-*[I <3 LaCroix]({{ site.url }}/la-croy/)*
+*[I <3 LaCroix](http://jingyufan.club/sounds-like-enjoy/)*
 
 Here are some of the mechanics of the project. I made an array of image names and spliced it randomly to create a new array with a length randomly selected between a minimum of four and a maximum of the number of items in the original array.
 ```js
